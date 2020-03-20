@@ -16,6 +16,7 @@ def Absolute(x):
         return -x
 
 
+
 def main():
     TableMax = 10
     print("Welcome to my first program")
