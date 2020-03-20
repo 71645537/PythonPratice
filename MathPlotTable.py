@@ -9,7 +9,12 @@ def Quadratic(a, b, c, x):
 def Trig(a,b,x):
     y = a*math.sin(x)+b*math.sin(x)
     return y
-#Absolute
+def Absolute(x):
+    if x>=0:
+        return x
+    if x <0:
+        return -x
+
 
 def main():
     TableMax = 10
@@ -19,7 +24,7 @@ def main():
         1)Unary\n\
         2)Qudratic\n\
         3)Trig\n\
-        4)NA\n\
+        4)Abolute\n\
         enter 0 to quit\
         "))
         print(UserInput)
@@ -37,5 +42,9 @@ def main():
             print("For Trig:")
             for i in range(TableMax):
                 print("y =", Trig(1,0,i), "when x =", i)
+        if (UserInput == 4):
+            for i in range (-10,10):
+                print("|x| =", Absolute(i), "when x =", i)
+            break
 
 main()
